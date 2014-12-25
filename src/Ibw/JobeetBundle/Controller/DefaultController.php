@@ -10,4 +10,8 @@ class DefaultController extends Controller
     {
         return $this->render('IbwJobeetBundle:Default:index.html.twig', array('name' => $name));
     }
+    public function testAction()
+    {
+        $this->getRequest()->get('post');
+    }
 }
