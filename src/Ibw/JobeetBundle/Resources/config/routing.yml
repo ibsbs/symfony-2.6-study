@@ -1,3 +1,8 @@
-ibw_jobeet_homepage:
-    path:     /hello/{name}
-    defaults: { _controller: IbwJobeetBundle:Default:index }
+#ibw_jobeet_homepage:
+#    path:     /hello/{name}
+#    defaults: { _controller: IbwJobeetBundle:Default:index }
+ibw_jobeet:
+    resource:  @IbwJobeetBundle/Controller/
+    type:  annotation
+
+
